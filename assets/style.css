@@ -1,0 +1,46 @@
+/* Main Background */
+.stApp {
+    background-color: #f4f7fc;
+}
+
+/* Main Title */
+h1 {
+    color: #0B5394;
+    font-weight: bold;
+}
+
+/* Section Headers */
+h2, h3 {
+    color: #1F4E79;
+}
+
+/* Metric Cards */
+[data-testid="stMetric"] {
+    background-color: white;
+    border: 1px solid #d9e2ef;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #0B5394;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.stButton > button:hover {
+    background-color: #1565C0;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #0F172A;
+}
+
+section[data-testid="stSidebar"] * {
+    color: white;
+}
