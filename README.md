@@ -10,6 +10,12 @@ This project demonstrates how organizations can build a structured governance fr
 
 ---
 
+## Live Demo
+
+Application URL:
+
+https://ai-governance-management-system-9masimkzwcbnxlywnupq3e.streamlit.app/
+
 # Features
 
 ## 1. AI Model Registry
