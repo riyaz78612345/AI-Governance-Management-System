@@ -364,3 +364,29 @@ Through this project, the following concepts were implemented:
 # Author
 
 Mohammed Riyaz
+
+## 📸 Application Screenshots
+
+### AI Model Registry
+
+![AI Model Registry](assets/screenshots/model-registry.png)
+
+### Risk Assessment
+
+![Risk Assessment](assets/screenshots/risk-assessment.png)
+
+### Compliance Assessment
+
+![Compliance Assessment](assets/screenshots/compliance-assessment.png)
+
+### Ethics Assessment
+
+![Ethics Assessment](assets/screenshots/ethics-assessment.png)
+
+### Incident Management
+
+![Incident Management](assets/screenshots/incident-management.png)
+
+### AI Governance Executive Dashboard
+
+![AI Governance Executive Dashboard](assets/screenshots/governance-dashboard.png)
