@@ -2,7 +2,6 @@ from database.connection import SessionLocal
 from database.models import User
 from utils.security import hash_password
 
-password=hash_password("admin123")
 
 session = SessionLocal()
 
@@ -10,21 +9,26 @@ admin = session.query(User).filter(
     User.username == "admin"
 ).first()
 
+new_password = hash_password("admin123")
+
 if not admin:
 
     admin = User(
         username="admin",
-        password=hash_password("admin123"),
+        password=new_password,
         role="Admin",
     )
 
     session.add(admin)
-    session.commit()
 
     print("Admin user created.")
 
 else:
 
-    print("Admin already exists.")
+    admin.password = new_password
+    admin.role = "Admin"
 
+    print("Admin password reset successfully.")
+
+session.commit()
 session.close()

@@ -24,7 +24,7 @@ def login():
             User.username == username
         ).first()
 
-        if user and user.password == password:
+        if user and verify_password(password, user.password):
 
             st.session_state.logged_in = True
             st.session_state.username = user.username
@@ -36,6 +36,8 @@ def login():
 
             st.rerun()
 
-        session.close()
+        else:
 
-        st.error("Invalid Username or Password")
+            session.close()
+
+            st.error("Invalid Username or Password")
